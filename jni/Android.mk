@@ -30,7 +30,7 @@ LOCAL_SRC_FILES :=AndroidCodegen.cpp \
 					
 LOCAL_LDLIBS    := -llog\
 					-lz					
-LOCAL_C_INCLUDES :=/Users/alex/Desktop/GVSU/MASLEchoPrint/jni/codegen/src \
-					/Users/alex/Desktop/GVSU/MASLEchoPrint/jni/boost_1_47_0				
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/codegen/src \
+					$(LOCAL_PATH)/boost_1_47_0				
 
 include $(BUILD_SHARED_LIBRARY)
